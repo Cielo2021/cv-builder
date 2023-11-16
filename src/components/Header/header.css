@@ -1,0 +1,62 @@
+/* Header.css */
+
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: left;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.top-section h1 {
+  margin: 0; /* Remove default margin for <h1> */
+  flex-grow: 1;
+  text-align: left;
+}
+
+.icon-container {
+  display: flex;
+  gap: 20px; /* Add some spacing between the icons */
+  width: 200px;
+  align-items: center;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.bottom-section {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.bottom-section p {
+  font-size: 14px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}

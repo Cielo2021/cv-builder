@@ -1,0 +1,81 @@
+.preview {
+  font-family: Arial, sans-serif;
+  max-width: 8.5in; /* Set the max-width to resemble a letter-sized page */
+  width: 100%; /* Take up the full available width */
+  margin: 0 auto 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 8in; /* Set the height to 11 inches for portrait style */
+  overflow: auto; /* Enable scrolling if content exceeds the height */
+  border-radius: 20px;
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 0; /* Added to move h1 up a bit */
+}
+
+/* Added lines to separate sections */
+.section {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd; /* Line between sections */
+  padding-bottom: 20px; /* Space between sections */
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.educationContainer {
+  margin-bottom: 20px; /* Adjust the value to control the spacing between education entries */
+}
+
+.experienceContainer {
+  margin-bottom: 20px; /* Adjust the value to control the spacing between education entries */
+}
+
+/* Updated styles for the layout */
+.forms-container {
+  display: flex;
+  justify-content: space-between; /* Adjust this based on your design */
+  gap: 20px; /* Adjust the gap between forms and Preview */
+  margin-bottom: 20px;
+  align-items: stretch;
+  align-items: stretch;
+  margin-top: 30px;
+
+}
+
+/* Add this to your existing CSS or create a separate CSS file */
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust the gap between the forms and the preview */
+  margin-bottom: 20px;
+}
+
+.preview {
+  flex: 1;
+}
+
+.forms {
+  flex: 1;
+}
+
+.preview-container {
+  flex: 2;
+}

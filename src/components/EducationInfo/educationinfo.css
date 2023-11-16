@@ -1,0 +1,104 @@
+.education-info {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  border-radius: 12px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 500px;
+}
+
+.education-info h2 {
+  font-size: 16px;
+}
+
+.education-info form label {
+  font-size: 16px; /* Reduce the font size of labels */
+}
+
+.education {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+}
+
+.education-info form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px; /* Add a gap between form elements */
+}
+
+.education-info form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.education-info .info-section {
+  display: flex;
+  align-items: flex-start;
+}
+
+.education-info .left-section {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.education-info input,
+.education-info textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  width: 100%;
+  resize: vertical;
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.education-info textarea {
+  resize: vertical;
+}
+
+.education-info button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 8px 15px; /* Adjust padding for centering */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.education-info button:hover {
+  background-color: #0056b3;
+}
+
+.education-info .display-mode {
+  margin-top: 15px;
+}
+
+.education-info .display-mode button {
+  background-color: #28a745;
+}
+
+.education-info .display-mode button:hover {
+  background-color: #1a732e;
+}
+
+/* Add double spacing to the data in the preview */
+.education-preview p {
+  margin-bottom: 20px;
+}

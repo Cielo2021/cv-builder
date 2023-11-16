@@ -1,0 +1,100 @@
+.work-experience {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  border-radius: 12px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 500px;
+}
+
+.work-experience .left-section {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+}
+
+.work {
+  width: 40px;
+  height: auto;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.work-experience h2 {
+  font-size: 16px;
+}
+
+.work-experience form label {
+  font-size: 14px;
+  margin-bottom: 8px; /* Increase spacing between labels */
+}
+
+.work-experience form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px; /* Add a gap between form elements */
+}
+
+.work-experience form label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.work-experience input,
+.work-experience textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  width: 100%;
+  resize: vertical;
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.work-experience textarea {
+  resize: vertical;
+}
+
+.work-experience button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.work-experience button:hover {
+  background-color: #0056b3;
+}
+
+.work-experience .display-mode {
+  margin-top: 15px;
+}
+
+.work-experience .display-mode button {
+  background-color: #28a745;
+}
+
+.work-experience .display-mode button:hover {
+  background-color: #1a732e;
+}
+
+/* Add double spacing to the data in the preview */
+.experience-preview p {
+  margin-bottom: 10px;
+}
+
