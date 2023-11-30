@@ -15,7 +15,7 @@
 }
 
 .header h1 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .top-section h1 {
@@ -52,7 +52,7 @@
 }
 
 .bottom-section p {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 a {
@@ -60,3 +60,21 @@ a {
   text-decoration: none;
   margin-left: 10px;
 }
+
+/* Header.css */
+
+.download-button {
+  background-color: #007bff; /* Background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 20px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.download-button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+

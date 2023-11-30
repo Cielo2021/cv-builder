@@ -94,7 +94,7 @@ const WorkExperience = ({
             </label>
 
             <button type="submit">
-              {editMode ? "Add Education" : "Submit"}
+              {editMode ? "Add Work Experience" : "Submit"}
             </button>
           </form>
         ) : (

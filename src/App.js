@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Header from "./components/Header/header";
 import ContactInfo from "./components/ContactInfo/contactinfo";
 import TechnicalSkills from "./components/TechnicalSkills/technicalskills";
@@ -10,6 +10,7 @@ import html2pdf from "html2pdf.js";
 import "./style.css";
 
 function App() {
+  const previewRef = useRef(null);
   const [contactInfo, setContactInfo] = useState({
     name: "",
     email: "",
@@ -70,21 +71,15 @@ function App() {
       margin: 10,
       filename: "resume.pdf",
       image: { type: "jpeg", quality: 0.98 },
-
       html2canvas: { scale: 2 },
       jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
     };
 
     html2pdf()
-      .from(preview)
+      .from(previewRef.current)
       .set(options)
-      .outputPdf((pdf) => {
-        const blob = new Blob([pdf.output("blob")], {
-          type: "application/pdf",
-        });
-        const url = URL.createObjectURL(blob);
-        window.open(url, "_blank");
-      });
+      .save()
+      .catch((error) => console.log("Error generating PDF:", error));
   };
 
   return (
@@ -118,7 +113,7 @@ function App() {
           />
         </div>
 
-        <div className="preview-container">
+        <div ref={previewRef} className="preview-container">
           <Preview
             contactInfo={contactInfo}
             technicalSkills={technicalSkills}

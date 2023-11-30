@@ -11,10 +11,10 @@ const ContactInfo = ({
 
   // Define the state for form fields
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phoneNumber: "",
-    professionalStatement: "",
+    name: contactInfo.name,
+    email: contactInfo.email,
+    phoneNumber: contactInfo.phoneNumber,
+    professionalStatement: contactInfo.professionalStatement,
   });
 
   const { name, email, phoneNumber, professionalStatement } = formData;
@@ -28,14 +28,6 @@ const ContactInfo = ({
 
     // Pass the updated contactInfo to the parent component (App.js)
     onSubmitContactInfo(formData);
-
-    // Clear the input fields when adding new contact info
-    setFormData({
-      name: "",
-      email: "",
-      phoneNumber: "",
-      professionalStatement: "",
-    });
 
     // Switch back to edit mode
     setEditMode(false);
