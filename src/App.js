@@ -18,7 +18,7 @@ function App() {
     professionalStatement: "",
   });
 
-  const [technicalSkills, setTechnicalSkills] = useState({
+  const [technicalSkills, setTechnicalSkills] = iuseState({
     skills: "",
   });
 
